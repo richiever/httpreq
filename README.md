@@ -13,7 +13,7 @@ and proceed with the command:
 import "github.com/richiever/httpreq"
 ```
 
-#### Or alternatively:
+## Or alternatively:
 ```cmd
 git clone https://github.com/richiever/httpreq
 ```
