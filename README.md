@@ -7,6 +7,12 @@
 ```cmd
 go get github.com/richiever/httpreq
 ```
+
+and proceed with the command:
+```Go
+import "github.com/richiever/httpreq"
+```
+
 #### Or alternatively:
 ```cmd
 git clone https://github.com/richiever/httpreq
