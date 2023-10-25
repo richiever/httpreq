@@ -7,7 +7,10 @@
 ```cmd
 go get github.com/richiever/httpreq
 ```
-
+#### Or alternatively:
+```cmd
+git clone https://github.com/richiever/httpreq
+```
 ## GET request Example 
 
 ```Go
