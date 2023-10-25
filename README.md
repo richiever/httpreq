@@ -4,7 +4,9 @@
 ## Installation:
 
 ### To install, use the command:
-``go get github.com/richiever/httpreq``
+```cmd
+go get github.com/richiever/httpreq
+```
 
 ## GET request Example 
 
