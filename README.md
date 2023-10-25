@@ -1,5 +1,5 @@
 # HTTPREQ
-#### A python-like HTTP request module for the GO language.
+#### A simple and easy to use module for HTTP requests in Golang.
 
 ## Installation:
 
