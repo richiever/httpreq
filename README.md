@@ -11,6 +11,7 @@ go get github.com/richiever/httpreq
 ```cmd
 git clone https://github.com/richiever/httpreq
 ```
+and simply add the files to your project directory.
 ## GET request Example 
 
 ```Go
