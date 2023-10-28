@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
 )
@@ -37,4 +38,14 @@ func (r RequestsPost) PostRequestMakeRequest(b1 bytes.Buffer) http.Response {
 
 func (r RequestsPost) Post() http.Response {
 	return r.PostRequestMakeRequest(r.PostRequestByteBuffer())
+}
+
+func (r RequestsPost) PostAsString() string {
+	body, err := ioutil.ReadAll(r.Post().Body)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	strBody := string(body)
+	return strBody
+
 }

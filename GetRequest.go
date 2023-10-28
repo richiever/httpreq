@@ -28,14 +28,14 @@ func (r Requests) GetBody(response *http.Response) []byte {
 	return body_req
 }
 
-func (r Requests) GetStringify(body_req []byte) string {
-
-	stringifiedBody := string(body_req)
-	return stringifiedBody
-}
-
 func (r Requests) Get() []byte {
 	Resp := r.RespGet()
 	return r.GetBody(Resp)
 
+}
+
+func (r Requests) GetAsString() string {
+
+	stringifiedBody := string(r.Get())
+	return stringifiedBody
 }
