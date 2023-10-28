@@ -19,7 +19,7 @@ var Allr2 = []Requests2{
 func Test_Post(t *testing.T) {
 
 	for _, tests := range Allr2 {
-		got := Rtest.PostRequestMakeRequest(Rtest.PostRequestByteBuffer())
+		got := Rtest.Post()
 		want := tests.arg1
 		if got.StatusCode != want.StatusCode {
 			t.Errorf("not valid")

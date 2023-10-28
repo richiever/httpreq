@@ -34,3 +34,7 @@ func (r RequestsPost) PostRequestMakeRequest(b1 bytes.Buffer) http.Response {
 	}(resp.Body)
 	return *resp
 }
+
+func (r RequestsPost) Post() http.Response {
+	return r.PostRequestMakeRequest(r.PostRequestByteBuffer())
+}
