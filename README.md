@@ -25,3 +25,12 @@ R := Requests{"https://jsonplaceholder.typicode.com/posts/1"}
 R.Get() // returns the request in []byte
 R.GetStringify(R.Get()) // Returns request as a string
 ```
+## Post request Example 
+
+```Go
+R := RequestsPostRequestsPost{url: "https://jsonplaceholder.typicode.com/posts/1", postBody: map[string]string{"name": "Toby", "email": "Toby@example.com"}, requestType: "application/json"}
+R.Post() // returns the request in type http.Response
+```
+
+
+
